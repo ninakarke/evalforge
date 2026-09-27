@@ -1,0 +1,37 @@
+{
+  "name": "support-qa-v1",
+  "cases": [
+    {
+      "id": "refund-001",
+      "question": "How long do refunds take?",
+      "reference_answer": "Refunds arrive in 5 business days.",
+      "answer": "Refunds arrive in 5 business days.",
+      "contexts": [
+        {"id": "refund-policy", "relevant": true, "text": "Refunds arrive in 5 business days."},
+        {"id": "shipping-policy", "relevant": false, "text": "Shipping takes 3 days."}
+      ],
+      "reference_relevant_count": 1
+    },
+    {
+      "id": "export-001",
+      "question": "Can I export my data?",
+      "reference_answer": "Yes, you can export your data as JSON.",
+      "answer": "Yes, you can export your data as JSON.",
+      "contexts": [
+        {"id": "export-policy", "relevant": true, "text": "Data exports are available as JSON."},
+        {"id": "privacy-policy", "relevant": true, "text": "You control your stored data."}
+      ],
+      "reference_relevant_count": 2
+    },
+    {
+      "id": "retention-001",
+      "question": "How long is account history retained?",
+      "reference_answer": "Account history is retained for 90 days.",
+      "answer": "Account history is retained for 30 days.",
+      "contexts": [
+        {"id": "retention-policy", "relevant": false, "text": "Temporary logs are retained for 30 days."}
+      ],
+      "reference_relevant_count": 1
+    }
+  ]
+}
