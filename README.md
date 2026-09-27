@@ -29,9 +29,9 @@ Example output:
 EvalForge report
 cases: 3
 answer_exact_match: 0.667
-answer_token_f1: 0.889
-context_precision: 0.833
-context_recall: 0.833
+answer_token_f1: 0.952
+context_precision: 0.500
+context_recall: 0.667
 status: PASS
 ```
 
